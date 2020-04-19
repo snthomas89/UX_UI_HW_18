@@ -1,0 +1,76 @@
+/*Global Properties*/
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #707070;
+    background-color: #f0f0f0;
+}
+
+/*Header*/
+.inline-block {
+    display: inline;
+    vertical-align: top;
+}
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: left;
+}
+.navigation {
+    background-color: #b2cdd6;
+    margin-bottom: 30px;
+}
+ul {
+    margin-left: 0px;
+    list-style-type: none;
+    color: #435c73;
+}
+.links {
+    float: right;
+    padding: 0px 140px;
+}
+li {
+    padding: 25px;
+}
+
+/*Body and Content*/
+.mainGrid {
+    display: grid;
+    margin: 0px 140px;
+    grid-template-rows: 90% 10%;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "img personalStatement"
+    "img resumeButton";
+}
+#headshot {
+    grid-area: img;
+}
+#statement {
+    grid-area: personalStatement;
+    text-align: right;
+}
+#download {
+    grid-area: resumeButton;
+    text-align: right;
+}
+button {
+    background-color: #b2cdd6;
+}
+.content {
+    width: 500px;
+    /*margin: 0 auto;*/
+    flex-direction: row;
+}
+.mainGridArea{
+   padding: 0px 5%;
+}
+h1 {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+}
