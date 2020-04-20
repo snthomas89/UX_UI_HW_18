@@ -68,9 +68,72 @@ button {
 h1 {
     font-family: 'Liu Jian Mao Cao', cursive;
     font-size: 50px;
+    text-align: right;
+    margin-right: 150px;
+}
+#name {
+    margin-right: 0px;
 }
 
 h2 {
     font-family: 'Dosis', sans-serif;
     font-size: 25px;
+}
+
+/* Skills Section coded with CSS Flex */
+.flexContainer {
+    display: flex;
+    margin: 140px;
+}
+
+.flexContainer div {
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Projects Section coded with CSS Grid */
+.workGrid {
+    display: grid;
+    margin: 140px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+        "projImg1 projDesc1 projDesc1 projDesc1"
+        "projDesc2 projDesc2 projDesc2 projImg2"
+        "projImg3 projDesc3 projDesc3 projDesc3"
+    ;
+    padding: 20px;
+
+}
+
+#projImg1 {
+    grid-area: projImg1;
+}
+#projDesc1 {
+    grid-area: projDesc1;
+}
+#projImg2 {
+    grid-area: projImg2;
+}
+#projDesc2 {
+    grid-area: projDesc2;
+}
+#projImg3 {
+    grid-area: projImg3;
+}
+#projDesc3 {
+    grid-area: projDesc3;
+}
+
+.myWork img {
+    width: 75px;
+}
+.workGrid div {
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    
 }
