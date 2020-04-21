@@ -57,11 +57,7 @@ li {
 button {
     background-color: #b2cdd6;
 }
-.content {
-    width: 500px;
-    /*margin: 0 auto;*/
-    flex-direction: row;
-}
+
 .mainGridArea{
    padding: 0px 5%;
 }
@@ -69,7 +65,7 @@ h1 {
     font-family: 'Liu Jian Mao Cao', cursive;
     font-size: 50px;
     text-align: right;
-    margin-right: 150px;
+    margin-right: 180px;
 }
 #name {
     margin-right: 0px;
@@ -78,6 +74,10 @@ h1 {
 h2 {
     font-family: 'Dosis', sans-serif;
     font-size: 25px;
+}
+h3{ 
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 /* Skills Section coded with CSS Flex */
@@ -97,7 +97,7 @@ h2 {
 /* Projects Section coded with CSS Grid */
 .workGrid {
     display: grid;
-    margin: 140px;
+    margin: 0px 140px;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 33% 33% 33%;
     grid-template-areas: 
@@ -129,11 +129,51 @@ h2 {
 }
 
 .myWork img {
-    width: 75px;
+    width: 100%;
+    align-items: center;
 }
 .workGrid div {
     border: 1px solid black;
     padding: 20px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainGrid {
+        display: grid;
+        justify-items: center; 
+        margin: 0 auto;
+        grid-template-rows: 57% 40% 10%;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "img"
+        "personalStatement"
+        "resumeButton";
+    }
+    #statement {
+        margin: 15px;
+    }
+    .links {
+        display: none;
+    }
+    .flexContainer {
+        flex-direction: column;
+        margin: 0px;
+    }
     
+    h1{
+        margin-right: 6%;
+    }
+    .workGrid {
+        display: grid;
+        margin: 0px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas: 
+            "projImg1 projDesc1 projDesc1 projDesc1"
+            "projDesc2 projDesc2 projDesc2 projImg2"
+            "projImg3 projDesc3 projDesc3 projDesc3"
+        ;
+        padding: 20px;    
+    }
 }
