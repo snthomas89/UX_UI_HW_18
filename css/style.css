@@ -105,7 +105,7 @@ h3{
         "projDesc2 projDesc2 projDesc2 projImg2"
         "projImg3 projDesc3 projDesc3 projDesc3"
     ;
-    padding: 20px;
+    justify-items: center;
 
 }
 
@@ -126,6 +126,7 @@ h3{
 }
 #projDesc3 {
     grid-area: projDesc3;
+    padding-top: 0px;
 }
 
 .myWork img {
@@ -168,12 +169,12 @@ h3{
         display: grid;
         margin: 0px;
         grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows: 32% 32% 35%;
         grid-template-areas: 
             "projImg1 projDesc1 projDesc1 projDesc1"
             "projDesc2 projDesc2 projDesc2 projImg2"
             "projImg3 projDesc3 projDesc3 projDesc3"
         ;
-        padding: 20px;    
+        padding: 0px;    
     }
 }
